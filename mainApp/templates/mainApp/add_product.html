@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Страница добавления товара</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'mainApp/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <h2 class="page-title">Мастерская</h2>
+        <a href="{% url 'index' %}" class="add-button">Вернуться к товарам</a>
+    </nav>
+  <div class="add-product-container">
+    <h2>Добавить новый товар</h2>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="Название">
+      <select name="unit">
+        {% for unit in units %}
+        <option value="{{ unit.id }}">{{ unit.name }}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="Добавить">
+    </form>
+  </div>
+</body>
+</html>
+
