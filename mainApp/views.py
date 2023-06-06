@@ -1,22 +1,15 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.decorators import login_required
 from mainApp.models import Product, Unit
 from django.http import JsonResponse
 from django.views.decorators.http import require_GET
 from .models import Product
 
-def login_view(request):
-    if request.method == 'POST':
-        # Обработка логики входа
-        return redirect('index')
-    return render(request, 'mainApp/login.html')
 
-#@login_required(login_url='/login/')
 def index_view(request):
     products = Product.objects.all().select_related('unit')
     return render(request, 'mainApp/index.html', {'products': products})
 
-#@login_required(login_url='/login/')
+
 def add_product_view(request):
     units = Unit.objects.all()
     if request.method == 'POST':
@@ -42,7 +35,7 @@ def search_products(request):
     products_data = [{'name': product.name, 'quantity': product.get_quantity(), 'last_updated':product.get_datetime(), 'unit':product.unit.get_slug()} for product in products]
     return JsonResponse({'products': products_data})
 
-#@login_required(login_url='/login/')
+
 def delete_product_view(request, product_id):
     if request.method == 'POST':
         product = Product.objects.get(pk=product_id)
@@ -53,7 +46,6 @@ def delete_product_view(request, product_id):
 from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
-#@login_required(login_url='/login/')
 def add_quantity_view(request, product_id):
     if request.method == 'POST':
         quantity = float(request.POST.get('quantity', 0))
