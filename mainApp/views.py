@@ -13,7 +13,7 @@ def login_view(request):
 
 #@login_required(login_url='/login/')
 def index_view(request):
-    products = Product.objects.all()
+    products = Product.objects.all().select_related('unit')
     return render(request, 'mainApp/index.html', {'products': products})
 
 #@login_required(login_url='/login/')
