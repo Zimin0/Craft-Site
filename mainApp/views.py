@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from mainApp.models import Product, Unit
 from django.http import JsonResponse
 from django.views.decorators.http import require_GET
-from .models import Product
+from mainApp.models import Product
 
 
 def index_view(request):
