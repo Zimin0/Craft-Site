@@ -36,6 +36,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CSRF_TRUSTED_ORIGINS = ['http://craft-workshop.ru','http://194.67.121.198', 'http://www.craft-workshop.ru',]
 
 # Application definition
 
