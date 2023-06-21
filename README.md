@@ -1,6 +1,7 @@
 # Craft-Site
 
 This project, hosted on [GitHub](https://github.com/Zimin0/Craft-Site), is a small site developed for a carpentry workshop.
+May be still available on craft-workshop.ru. Check it!
 
 ## Features
 
@@ -10,3 +11,6 @@ This project, hosted on [GitHub](https://github.com/Zimin0/Craft-Site), is a sma
 
 ## JavaScript Code
 The JavaScript code for this project has been written by ChatGPT4.
+
+## Appearance
+![alt text](https://github.com/Zimin0/Photoes/blob/main/workshop.png)
