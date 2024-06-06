@@ -9,4 +9,5 @@ This project, hosted on [GitHub](https://github.com/Zimin0/Craft-Site), is a sma
 - Used AJAX to update the main page asynchronously.
 
 ## Appearance
-![alt text](https://github.com/Zimin0/Photoes/blob/main/workshop.png)
+![workshop](https://github.com/Zimin0/Craft-Site/assets/67171139/da6af503-df70-48cf-a1bd-460f4b266c72)
+
