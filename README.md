@@ -8,8 +8,5 @@ This project, hosted on [GitHub](https://github.com/Zimin0/Craft-Site), is a sma
 - Opportunity to add, delete, and inscrease amount of added objects.
 - Used AJAX to update the main page asynchronously.
 
-## JavaScript Code
-The JavaScript code for this project has been written by ChatGPT4.
-
 ## Appearance
 ![alt text](https://github.com/Zimin0/Photoes/blob/main/workshop.png)
