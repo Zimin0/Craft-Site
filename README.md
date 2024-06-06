@@ -1,7 +1,6 @@
 # Craft-Site
 
 This project, hosted on [GitHub](https://github.com/Zimin0/Craft-Site), is a small site developed for a carpentry workshop.
-May be still available on craft-workshop.ru. Check it!
 
 ## Features
 
